@@ -164,5 +164,5 @@ app.get("/players/:playerId/playerScores/", async (request, response) => {
            player_id = ${playerId}
     `;
   const playerStats = await database.get(getStatsOfPlayerQuery);
-  response.send(playerStats);
+  response.send(playerStats);//
 });
